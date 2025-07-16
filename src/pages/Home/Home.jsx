@@ -4,7 +4,7 @@ import "./Home.css";
 import Skills from "../Skills/Skills.jsx";
 
 const email = import.meta.env.VITE_RECEIVER_EMAIL;
-const emailTo = `mailto:${email}`;
+const emailTo = `mailto:${email}?subject=Hello%20Sean%20Montano&body=Hi%20Sean,%0D%0A%0D%0AI%20would%20like%20to%20get%20in%20touch%20with%20you.%0D%0A%0D%0ARegards,%0D%0A`;
 
 export default function Home() {
     return (
