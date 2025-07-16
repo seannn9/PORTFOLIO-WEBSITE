@@ -1,0 +1,17 @@
+.projects-section {
+    min-height: inherit;
+    width: 100%;
+    color: var(--background-color);
+    background-color: var(--text-color);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.projects-header {
+    font-size: 2rem;
+    height: fit-content;
+}
