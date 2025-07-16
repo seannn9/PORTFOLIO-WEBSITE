@@ -29,6 +29,10 @@ h1 {
     font-size: 3.2em;
 }
 
+.accent {
+    color: var(--hover-text-color);
+}
+
 @keyframes bounce {
     0% {
         scale: 1;
