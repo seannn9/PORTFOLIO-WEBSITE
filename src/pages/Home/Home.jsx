@@ -1,7 +1,7 @@
 import Button from "../../components/Button/Button.jsx";
 import ScrollDown from "../../components/ScrollDown/ScrollDown.jsx";
 import "./Home.css";
-import Skills from "../Skills/Skills.jsx";
+import Projects from "../Projects/Projects.jsx";
 
 const email = import.meta.env.VITE_RECEIVER_EMAIL;
 const emailTo = `mailto:${email}?subject=Hello%20Sean%20Montano&body=Hi%20Sean,%0D%0A%0D%0AI%20would%20like%20to%20get%20in%20touch%20with%20you.%0D%0A%0D%0ARegards,%0D%0A`;
@@ -10,7 +10,10 @@ export default function Home() {
     return (
         <>
             <section id="intro-section" className="intro-section">
-                <h1>Sean Montano</h1>
+                <h1 className="flex">
+                    <span>Hi, I'm</span>
+                    <span className="accent">Sean Montano</span>
+                </h1>
                 <section className="intro">
                     <h2>Computer Engineer</h2>
                     <h2>Fresh Graduate of DLSU-D</h2>
@@ -115,11 +118,12 @@ export default function Home() {
                     </a>
                 </section>
                 <ScrollDown
-                    section_id="skills-section"
+                    section_id="projects-section"
                     color_stroke="rgb(228,228,228)"
+                    action="PROJECTS"
                 />
             </section>
-            <Skills />
+            <Projects />
         </>
     );
 }
