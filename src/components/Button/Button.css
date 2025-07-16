@@ -1,0 +1,31 @@
+.button {
+    display: flex;
+    color: var(--background-color);
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: var(--hover-text-color);
+    border-radius: 2rem;
+    border: 2px solid var(--hover-text-color);
+    padding: 1rem 1.5rem;
+    width: fit-content;
+    cursor: pointer;
+    gap: 0.5rem;
+    align-items: center;
+    text-decoration: none;
+}
+
+.button,
+.button > svg {
+    transition: all 0.2s ease;
+}
+
+.button:hover {
+    background-color: transparent;
+    color: var(--text-color);
+    scale: 1.05;
+}
+
+.button:hover > svg {
+    filter: invert(1);
+    scale: 1.2;
+}

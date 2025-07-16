@@ -1,0 +1,15 @@
+#root {
+    min-height: inherit;
+    display: flex;
+    justify-content: center;
+}
+
+.main-container {
+    color: var(--text-color);
+    min-height: inherit;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}

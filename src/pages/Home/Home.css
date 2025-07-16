@@ -1,0 +1,51 @@
+.intro-section {
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    position: relative;
+}
+
+h1 {
+    font-family: "Raleway", Avenir, Helvetica, Arial, sans-serif;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+
+h1,
+h2,
+.links-container {
+    width: 100%;
+}
+
+.intro {
+    margin: 1rem 0;
+}
+
+.intro > h2 {
+    margin: 0;
+}
+
+.links-container {
+    display: flex;
+    gap: 2rem;
+    padding: 1rem 0;
+}
+
+.social-icon {
+    padding: 1rem;
+    clip-path: circle(40%);
+    transition: all 0.2s ease;
+    background-color: var(--background-color);
+    position: relative;
+}
+
+.social-icon:hover {
+    filter: invert(1);
+    animation: bounce 0.5s ease;
+}
+
+.cta-container {
+    padding: 1rem 0;
+}
