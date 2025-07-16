@@ -1,6 +1,6 @@
 import "./ScrollDown.css";
 
-export default function ScrollDown({ section_id, color_stroke }) {
+export default function ScrollDown({ section_id, color_stroke, action }) {
     return (
         <div
             className="scroll-down-btn"
@@ -10,6 +10,7 @@ export default function ScrollDown({ section_id, color_stroke }) {
                     ?.scrollIntoView({ behavior: "smooth" });
             }}
         >
+            <div>{action}</div>
             <svg
                 width="64px"
                 height="64px"
