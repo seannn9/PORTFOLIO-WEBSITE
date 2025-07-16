@@ -38,7 +38,11 @@ export default function Home() {
                     />
                 </div>
                 <section className="links-container">
-                    <a href="https://github.com/seannn9" target="_blank">
+                    <a
+                        href="https://github.com/seannn9"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         <svg
                             className="social-icon"
                             width="32px"
