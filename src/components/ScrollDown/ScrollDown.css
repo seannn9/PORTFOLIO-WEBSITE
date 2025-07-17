@@ -27,3 +27,15 @@
         transform: translateY(0px);
     }
 }
+
+@media screen and (max-height: 750px) {
+    .scroll-down-btn {
+        scale: 0.8;
+        bottom: 0;
+        right: -2rem;
+    }
+
+    .scroll-down-btn:hover {
+        scale: 1;
+    }
+}
