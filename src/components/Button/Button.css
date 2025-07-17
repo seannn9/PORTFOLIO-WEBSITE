@@ -1,4 +1,5 @@
-.button {
+.cta-1,
+.cta-2 {
     display: flex;
     color: var(--background-color);
     font-size: 1rem;
@@ -14,18 +15,40 @@
     text-decoration: none;
 }
 
-.button,
-.button > svg {
+.cta-1,
+.cta-1 > svg,
+.cta-2,
+.cta-2 > svg {
     transition: all 0.2s ease;
 }
 
-.button:hover {
+.cta-1:hover {
     background-color: transparent;
-    color: var(--text-color);
+    color: var(--hover-text-color);
     scale: 1.05;
 }
 
-.button:hover > svg {
+.cta-1:hover > svg {
+    scale: 1.2;
+}
+
+.cta-1:hover > svg > path {
+    fill: var(--hover-text-color);
+}
+
+.cta-2 {
+    border-color: var(--text-color);
+    background-color: var(--text-color);
+    color: var(--background-color);
+}
+
+.cta-2:hover {
+    color: var(--text-color);
+    background-color: var(--background-color);
+    scale: 1.05;
+}
+
+.cta-2:hover > svg {
     filter: invert(1);
     scale: 1.2;
 }
