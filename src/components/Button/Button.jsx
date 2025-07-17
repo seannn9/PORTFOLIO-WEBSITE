@@ -1,8 +1,8 @@
 import "./Button.css";
 
-export default function Button({ icon, action, onclick }) {
+export default function Button({ icon, action, onclick, colorscheme }) {
     return (
-        <a className="button" href={onclick}>
+        <a className={colorscheme} href={onclick}>
             {icon}
             {action}
         </a>
