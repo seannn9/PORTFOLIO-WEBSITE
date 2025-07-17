@@ -2,7 +2,6 @@ import "./Projects.css";
 import supabase from "../../server/supabase.js";
 import { useState, useEffect } from "react";
 import ProjectCard from "../../components/ProjectCard/ProjectCard.jsx";
-import ScrollDown from "../../components/ScrollDown/ScrollDown.jsx";
 
 export default function Projects() {
     const [projects, setProjects] = useState([]);
@@ -32,17 +31,14 @@ export default function Projects() {
         <section id="projects-section" className="projects-section">
             <h2 className="projects-header">PROJECTS</h2>
             <div className="project-container">
-                {projects.map((project, key) => (
-                    <ProjectCard
-                        key={key}
-                        project_name={project.project_name}
-                    />
-                ))}
+                {projects.length > 0 &&
+                    projects.map((project, key) => (
+                        <ProjectCard
+                            key={key}
+                            project_name={project.project_name}
+                        />
+                    ))}
             </div>
         </section>
     );
-}
-
-{
-    /* <ScrollDown section_id="projects-section" color_stroke="#1b1b1b" /> */
 }
