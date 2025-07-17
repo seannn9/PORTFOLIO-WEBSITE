@@ -2,11 +2,43 @@ import Button from "../../components/Button/Button.jsx";
 import ScrollDown from "../../components/ScrollDown/ScrollDown.jsx";
 import "./Home.css";
 import Projects from "../Projects/Projects.jsx";
+import supabase from "../../server/supabase.js";
 
 const email = import.meta.env.VITE_RECEIVER_EMAIL;
 const emailTo = `mailto:${email}?subject=Hello%20Sean%20Montano&body=Hi%20Sean,%0D%0A%0D%0AI%20would%20like%20to%20get%20in%20touch%20with%20you.%0D%0A%0D%0ARegards,%0D%0A`;
 
 export default function Home() {
+    const downloadResume = async () => {
+        try {
+            const { data, error } = await supabase.storage
+                .from("work-files")
+                .download("MontanoSean_2025Resume.pdf");
+            if (error) {
+                console.log(
+                    "An error occured while trying to downloading resume",
+                    error
+                );
+            }
+            if (data) {
+                const url = URL.createObjectURL(data);
+                const link = document.createElement("a");
+                link.href = url;
+                link.download = "MontanoSean_2025Resume.pdf";
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+                URL.revokeObjectURL(url);
+
+                console.log("Download successful");
+            }
+        } catch (error) {
+            console.log(
+                "An error occured while trying to downloading resume",
+                error
+            );
+        }
+    };
+
     return (
         <>
             <section id="intro-section" className="intro-section">
@@ -20,6 +52,7 @@ export default function Home() {
                 </section>
                 <div className="cta-container">
                     <Button
+                        colorscheme="cta-1"
                         action="Contact Me"
                         onclick={emailTo}
                         icon={
@@ -39,7 +72,38 @@ export default function Home() {
                             </svg>
                         }
                     />
+                    <div onClick={downloadResume}>
+                        <Button
+                            colorscheme="cta-2"
+                            action="My Resume"
+                            icon={
+                                <svg
+                                    width="32px"
+                                    height="32px"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M13.5 3H12H7C5.89543 3 5 3.89543 5 5V19C5 20.1046 5.89543 21 7 21H7.5M13.5 3L19 8.625M13.5 3V7.625C13.5 8.17728 13.9477 8.625 14.5 8.625H19M19 8.625V9.75V12V19C19 20.1046 18.1046 21 17 21H16.5"
+                                        stroke="#1b1b1b"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M12 12V20M12 20L9.5 17.5M12 20L14.5 17.5"
+                                        stroke="#1b1b1b"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            }
+                        />
+                    </div>
                 </div>
+
                 <section className="links-container">
                     <a
                         href="https://github.com/seannn9"
