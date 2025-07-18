@@ -43,12 +43,12 @@ export default function Home() {
         <>
             <section id="intro-section" className="intro-section">
                 <h1 className="flex">
-                    <span>Hi, I'm</span>
-                    <span className="accent">Sean Montano</span>
+                    <span className="header-one">Hi, I'm</span>
+                    <span className="header-two accent">Sean Montano</span>
                 </h1>
                 <section className="intro">
-                    <h2>Computer Engineer</h2>
-                    <h2>Fresh Graduate of DLSU-D</h2>
+                    <h2 className="intro-one">Computer Engineer</h2>
+                    <h2 className="intro-two">Fresh Graduate of DLSU-D</h2>
                 </section>
                 <div className="cta-container">
                     <Button
