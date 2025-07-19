@@ -41,11 +41,6 @@ h1,
     position: relative;
 }
 
-.social-icon:hover {
-    filter: invert(1);
-    animation: bounce 0.5s ease;
-}
-
 .cta-container {
     display: flex;
     gap: 2rem;
@@ -113,7 +108,13 @@ h1,
 }
 
 .social-icon {
-    animation: fadeup 0.2s ease 1.2s, bounceback 0.3s ease 1.4s forwards;
+    animation: scale 0.3s ease, fadeup 0.2s ease 1.2s,
+        bounceback 0.3s ease 1.4s forwards;
+}
+
+.social-icon:hover {
+    filter: invert(1);
+    scale: 1.1;
 }
 
 @keyframes fadeup {
