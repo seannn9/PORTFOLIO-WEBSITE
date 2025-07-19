@@ -1,12 +1,12 @@
 .cta-1,
 .cta-2 {
     display: flex;
-    color: var(--background-color);
+    color: var(--dark);
     font-size: 1rem;
     font-weight: 700;
-    background-color: var(--hover-text-color);
+    background-color: var(--primary);
     border-radius: 2rem;
-    border: 2px solid var(--hover-text-color);
+    border: 2px solid var(--primary);
     padding: 1rem 1.5rem;
     width: fit-content;
     cursor: pointer;
@@ -24,7 +24,7 @@
 
 .cta-1:hover {
     background-color: transparent;
-    color: var(--hover-text-color);
+    color: var(--primary);
     scale: 1.05;
 }
 
@@ -33,18 +33,18 @@
 }
 
 .cta-1:hover > svg > path {
-    fill: var(--hover-text-color);
+    fill: var(--primary);
 }
 
 .cta-2 {
-    border-color: var(--text-color);
-    background-color: var(--text-color);
-    color: var(--background-color);
+    border-color: var(--light);
+    background-color: var(--light);
+    color: var(--dark);
 }
 
 .cta-2:hover {
-    color: var(--text-color);
-    background-color: var(--background-color);
+    color: var(--light);
+    background-color: var(--dark);
     scale: 1.05;
 }
 

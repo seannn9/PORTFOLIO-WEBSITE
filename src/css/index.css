@@ -5,17 +5,16 @@
 
     color-scheme: light dark;
     color: rgba(31, 28, 28, 0.87);
-    background-color: var(--background-color);
+    background-color: var(--dark);
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    --text-color: rgb(228, 228, 228);
-    --background-color: #1b1b1b;
-
-    --hover-text-color: #944bbb;
+    --primary: #944bbb;
+    --light: rgb(228, 228, 228);
+    --dark: #1b1b1b;
 }
 
 body {
@@ -30,5 +29,5 @@ h1 {
 }
 
 .accent {
-    color: var(--hover-text-color);
+    color: var(--primary);
 }
