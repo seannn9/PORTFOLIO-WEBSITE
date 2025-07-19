@@ -1,6 +1,6 @@
 .scroll-down-btn {
     position: absolute;
-    bottom: 1.5rem;
+    bottom: 1rem;
     align-self: center;
     cursor: pointer;
     opacity: 0;
@@ -59,7 +59,7 @@
         }
     }
     .scroll-down-btn {
-        bottom: 0rem;
-        right: -5rem;
+        bottom: 0;
+        right: -1rem;
     }
 }
