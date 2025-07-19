@@ -81,7 +81,9 @@ h1,
 .header-one,
 .header-two,
 .intro-one,
-.intro-two {
+.intro-two,
+.cta-container > *,
+.social-icon {
     opacity: 0;
 }
 
@@ -99,6 +101,19 @@ h1,
 
 .intro-two {
     animation: fadeleft 0.5s ease 1.1s forwards;
+}
+
+.cta-container > a {
+    animation: fadeup 0.2s ease 1s, bounceback 0.1s ease 1.2s forwards;
+}
+
+.cta-container > div {
+    animation: fadeup 0.2s ease 1.05s forwards,
+        bounceback 0.1s ease forwards 1.25s;
+}
+
+.social-icon {
+    animation: fadeup 0.2s ease 1.1s, bounceback 0.1s ease 1.3s forwards;
 }
 
 @keyframes fadeup {
