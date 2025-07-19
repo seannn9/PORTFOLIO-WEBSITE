@@ -5,12 +5,14 @@
     justify-content: center;
     width: 50%;
     position: relative;
+    gap: 1rem;
 }
 
 h1 {
     font-family: "Raleway", Avenir, Helvetica, Arial, sans-serif;
     font-weight: 900;
     margin-bottom: 0;
+    line-height: normal;
 }
 
 h1,
@@ -56,7 +58,9 @@ h1,
     h1,
     .intro {
         text-align: center;
-        line-height: normal;
+    }
+    h1 {
+        font-size: 2.8rem;
     }
     h2 {
         font-size: 1.2rem;
@@ -68,6 +72,12 @@ h1,
 
     .links-container {
         justify-content: center;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    h1 {
+        font-size: 2.2rem;
     }
 }
 
