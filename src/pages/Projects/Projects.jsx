@@ -12,7 +12,10 @@ export default function Projects() {
 
     const fetchProjects = async () => {
         try {
-            const { data, error } = await supabase.from("Projects").select("*");
+            const { data, error } = await supabase
+                .from("Projects")
+                .select("*")
+                .order("id", { ascending: true });
             if (error) {
                 console.log(
                     "An error occured while fetching projects: ",
