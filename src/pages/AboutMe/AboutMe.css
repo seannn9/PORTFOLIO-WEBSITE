@@ -41,3 +41,13 @@
     font-family: var(--header-font);
     font-size: 1.5rem;
 }
+
+@media screen and (max-width: 900px) {
+    .aboutme-container {
+        flex-direction: column-reverse;
+    }
+    .myinfo {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+}
