@@ -1,9 +1,9 @@
 import "./ScrollDown.css";
 
-export default function ScrollDown({ section_id, color_stroke, action }) {
+export default function ScrollDown({ section_id, action, theme }) {
     return (
         <div
-            className="scroll-down-btn"
+            className={`scroll-down-btn ${theme}`}
             onClick={() => {
                 document
                     .getElementById(section_id)
@@ -20,7 +20,6 @@ export default function ScrollDown({ section_id, color_stroke, action }) {
             >
                 <path
                     d="M7 10L12 15L17 10"
-                    stroke={color_stroke}
                     stroke-width="1.5"
                     stroke-linecap="round"
                     stroke-linejoin="round"
