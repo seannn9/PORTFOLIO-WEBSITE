@@ -15,6 +15,13 @@
 
 .scroll-down-btn:hover {
     scale: 1;
+}
+
+.scroll-down-btn.dark:hover {
+    color: var(--dark);
+}
+
+.scroll-down-btn.light:hover {
     color: var(--light);
 }
 
@@ -23,8 +30,12 @@
     stroke: rgb(132, 132, 132);
 }
 
-.scroll-down-btn:hover > svg > path {
+.scroll-down-btn.light:hover > svg > path {
     stroke: var(--light);
+}
+
+.scroll-down-btn.dark:hover > svg > path {
+    stroke: var(--dark);
 }
 
 @keyframes appear {
