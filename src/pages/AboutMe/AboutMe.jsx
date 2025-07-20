@@ -7,7 +7,7 @@ export default function AboutMe() {
             <h2 className="aboutme-header">ABOUT ME</h2>
             <ScrollDown
                 section_id="projects-section"
-                theme="dark"
+                theme="dark w-100"
                 action="PROJECTS"
             />
         </section>
