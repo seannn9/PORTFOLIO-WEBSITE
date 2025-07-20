@@ -1,11 +1,12 @@
 import Button from "../../components/Button/Button.jsx";
 import ScrollDown from "../../components/ScrollDown/ScrollDown.jsx";
 import "./Home.css";
-import Projects from "../Projects/Projects.jsx";
 import supabase from "../../server/supabase.js";
 
-const email = import.meta.env.VITE_RECEIVER_EMAIL;
-const emailTo = `mailto:${email}?subject=Hello%20Sean%20Montano&body=Hi%20Sean,%0D%0A%0D%0AI%20would%20like%20to%20get%20in%20touch%20with%20you.%0D%0A%0D%0ARegards,%0D%0A`;
+import Projects from "../Projects/Projects.jsx";
+import AboutMe from "../AboutMe/AboutMe.jsx";
+
+const emailTo = `mailto:seanulric9@gmail.com?subject=Hello%20Sean%20Montano&body=Hi%20Sean,%0D%0A%0D%0AI%20would%20like%20to%20get%20in%20touch%20with%20you.%0D%0A%0D%0ARegards,%0D%0A`;
 
 export default function Home() {
     const downloadResume = async () => {
@@ -182,11 +183,12 @@ export default function Home() {
                     </a>
                 </section>
                 <ScrollDown
-                    section_id="projects-section"
-                    color_stroke="rgb(228,228,228)"
-                    action="PROJECTS"
+                    section_id="aboutme-section"
+                    theme="light"
+                    action="ABOUT ME"
                 />
             </section>
+            <AboutMe />
             <Projects />
         </>
     );
