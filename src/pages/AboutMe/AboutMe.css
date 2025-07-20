@@ -1,0 +1,19 @@
+.aboutme-section {
+    min-height: inherit;
+    width: 100%;
+    color: var(--dark);
+    background-color: var(--light);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.aboutme-header {
+    height: fit-content;
+    font-family: var(--header-font);
+    font-size: 2rem;
+    font-weight: 900;
+}
