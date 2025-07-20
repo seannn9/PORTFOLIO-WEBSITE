@@ -1,6 +1,6 @@
 .scroll-down-btn {
     position: absolute;
-    bottom: 1rem;
+    bottom: 0;
     align-self: center;
     cursor: pointer;
     opacity: 0;
@@ -69,12 +69,12 @@
             scale: 0.9;
         }
     }
-    .scroll-down-btn {
+    /* .scroll-down-btn {
         bottom: 0;
         right: -1rem;
-    }
+    } */
 
-    .scroll-down-btn.w-100 {
+    /* .scroll-down-btn.w-100 {
         right: 1rem;
-    }
+    } */
 }
