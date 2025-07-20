@@ -73,4 +73,8 @@
         bottom: 0;
         right: -1rem;
     }
+
+    .scroll-down-btn.w-100 {
+        right: 1rem;
+    }
 }
