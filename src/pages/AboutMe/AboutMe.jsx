@@ -19,7 +19,6 @@ export default function AboutMe() {
                 console.log("An error occured while fetching image", error);
             }
             if (data) {
-                console.log("Successful", data);
                 setMyPic(data.publicUrl);
             }
         } catch (error) {
