@@ -42,6 +42,16 @@
     font-size: 1.5rem;
 }
 
+.detail {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.detail > h4 {
+    margin: 0.5rem 0;
+}
+
 @media screen and (max-width: 900px) {
     .aboutme-container {
         flex-direction: column-reverse;
