@@ -9,7 +9,7 @@
 }
 
 h1 {
-    font-family: "Raleway", Avenir, Helvetica, Arial, sans-serif;
+    font-family: var(--header-font);
     font-weight: 900;
     margin-bottom: 0;
     line-height: normal;
