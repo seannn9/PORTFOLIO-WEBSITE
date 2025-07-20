@@ -43,13 +43,15 @@ export default function Home() {
     return (
         <>
             <section id="intro-section" className="intro-section">
-                <h1 className="flex">
+                <h1 className="header flex">
                     <span className="header-one">Hi, I'm</span>
                     <span className="header-two accent">Sean Montano</span>
                 </h1>
                 <section className="intro">
-                    <h2 className="intro-one">Computer Engineer</h2>
-                    <h2 className="intro-two">Fresh Graduate of DLSU-D</h2>
+                    <h2 className="intro-one">Computer Engineer with</h2>
+                    <h2 className="intro-two">
+                        Specialization in Software Engineering
+                    </h2>
                 </section>
                 <div className="cta-container">
                     <Button
@@ -104,8 +106,7 @@ export default function Home() {
                         />
                     </div>
                 </div>
-
-                <section className="links-container">
+                <div className="links-container">
                     <a
                         href="https://github.com/seannn9"
                         target="_blank"
@@ -181,7 +182,8 @@ export default function Home() {
                             />
                         </svg>
                     </a>
-                </section>
+                </div>
+                <div className="home-divider"></div>
                 <ScrollDown
                     section_id="aboutme-section"
                     theme="light"
