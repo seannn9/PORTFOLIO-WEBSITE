@@ -6,6 +6,8 @@ import supabase from "../../server/supabase.js";
 import Projects from "../Projects/Projects.jsx";
 import AboutMe from "../AboutMe/AboutMe.jsx";
 
+import GradientText from "../../components/GradientText/GradientText.jsx";
+
 const emailTo = `mailto:seanulric9@gmail.com?subject=Hello%20Sean%20Montano&body=Hi%20Sean,%0D%0A%0D%0AI%20would%20like%20to%20get%20in%20touch%20with%20you.%0D%0A%0D%0ARegards,%0D%0A`;
 
 export default function Home() {
@@ -45,7 +47,22 @@ export default function Home() {
             <section id="intro-section" className="intro-section">
                 <h1 className="header flex">
                     <span className="header-one">Hi, I'm</span>
-                    <span className="header-two accent">Sean Montano</span>
+                    <span className="header-two">
+                        <GradientText
+                            colors={[
+                                "#944bbb",
+                                "#b366e6",
+                                "#d9a8ff",
+                                "#b366e6",
+                                "#944bbb",
+                            ]}
+                            animationSpeed={5}
+                            showBorder={false}
+                            className="custom-class"
+                        >
+                            Sean Montano
+                        </GradientText>
+                    </span>
                 </h1>
                 <section className="intro">
                     <h2 className="intro-one">Computer Engineer with</h2>

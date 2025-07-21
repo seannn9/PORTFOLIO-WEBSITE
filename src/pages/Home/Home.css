@@ -26,6 +26,7 @@ h1,
 }
 
 .intro {
+    font-family: var(--header-font);
     margin: 1rem 0;
 }
 
@@ -58,6 +59,12 @@ h1,
     flex-direction: column;
 }
 
+@media screen and (max-width: 900px) {
+    h2 {
+        font-size: 1.3rem;
+    }
+}
+
 @media screen and (max-width: 800px) {
     .intro-section {
         width: 80%;
@@ -80,6 +87,10 @@ h1,
     .links-container {
         justify-content: center;
     }
+    /* Gradient Text */
+    .custom-class {
+        justify-self: center;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -88,7 +99,7 @@ h1,
     }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 375px) {
     h1 {
         font-size: 2.2rem;
     }
