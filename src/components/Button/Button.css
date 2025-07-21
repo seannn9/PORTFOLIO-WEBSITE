@@ -23,7 +23,7 @@
 }
 
 .cta-1:hover {
-    background-color: transparent;
+    background-color: var(--dark);
     color: var(--primary);
     scale: 1.05;
 }
