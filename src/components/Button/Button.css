@@ -1,3 +1,8 @@
+.cta-1:hover,
+.cta-2:hover {
+    background-color: var(--dark);
+    scale: 1.05;
+}
 .cta-1,
 .cta-2 {
     display: flex;
@@ -14,40 +19,29 @@
     align-items: center;
     text-decoration: none;
 }
-
 .cta-1,
 .cta-1 > svg,
 .cta-2,
 .cta-2 > svg {
-    transition: all 0.2s ease;
+    transition: 0.2s;
 }
-
 .cta-1:hover {
-    background-color: var(--dark);
     color: var(--primary);
-    scale: 1.05;
 }
-
 .cta-1:hover > svg {
     scale: 1.2;
 }
-
 .cta-1:hover > svg > path {
     fill: var(--primary);
 }
-
 .cta-2 {
     border-color: var(--light);
     background-color: var(--light);
     color: var(--dark);
 }
-
 .cta-2:hover {
     color: var(--light);
-    background-color: var(--dark);
-    scale: 1.05;
 }
-
 .cta-2:hover > svg {
     filter: invert(1);
     scale: 1.2;

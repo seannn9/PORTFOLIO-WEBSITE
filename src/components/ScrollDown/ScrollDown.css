@@ -7,37 +7,30 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    animation: appear 0.3s ease 1.6s forwards, scroll-anim 2s ease infinite;
-    transition: all 0.2s ease;
+    animation: 0.3s 1.6s forwards appear, 2s infinite scroll-anim;
+    transition: 0.2s;
     scale: 0.8;
-    color: rgb(132, 132, 132);
+    color: #848484;
 }
-
 .scroll-down-btn:hover {
     scale: 1;
 }
-
 .scroll-down-btn.dark:hover {
     color: var(--dark);
 }
-
 .scroll-down-btn.light:hover {
     color: var(--light);
 }
-
 .scroll-down-btn > svg > path {
-    transition: all 0.2s ease;
+    transition: 0.2s;
     stroke: rgb(132, 132, 132);
 }
-
 .scroll-down-btn.light:hover > svg > path {
     stroke: var(--light);
 }
-
 .scroll-down-btn.dark:hover > svg > path {
     stroke: var(--dark);
 }
-
 @keyframes appear {
     from {
         opacity: 0;
@@ -46,35 +39,22 @@
         opacity: 1;
     }
 }
-
 @keyframes scroll-anim {
-    0% {
+    0%,
+    100% {
         transform: translateY(0);
     }
     50% {
         transform: translateY(10px);
     }
-    100% {
-        transform: translateY(0px);
-    }
 }
-
 @media screen and (max-height: 750px) {
     @media screen and (max-width: 750px) {
         .scroll-down-btn {
             scale: 0.7;
         }
-
         .scroll-down-btn:hover {
             scale: 0.9;
         }
     }
-    /* .scroll-down-btn {
-        bottom: 0;
-        right: -1rem;
-    } */
-
-    /* .scroll-down-btn.w-100 {
-        right: 1rem;
-    } */
 }
