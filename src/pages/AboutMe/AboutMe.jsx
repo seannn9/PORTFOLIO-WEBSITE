@@ -85,11 +85,13 @@ export default function AboutMe() {
                     </div>
                 </div>
                 {myPic && (
-                    <img
-                        className="mypic"
-                        src={myPic}
-                        alt="graduation picture"
-                    />
+                    <div className="pic-container">
+                        <img
+                            className="mypic"
+                            src={myPic}
+                            alt="graduation picture"
+                        />
+                    </div>
                 )}
             </div>
             <div className="skills-container">

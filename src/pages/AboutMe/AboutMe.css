@@ -35,7 +35,11 @@
     margin-bottom: 1rem;
 }
 
-.aboutme-container > img {
+.pic-container {
+    display: flex;
+}
+
+.mypic {
     max-height: 500px;
     max-width: 400px;
     border-radius: 3rem;
@@ -109,6 +113,10 @@
     .aboutme-container {
         flex-direction: column-reverse;
     }
+    .pic-container {
+        align-self: center;
+        filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.5));
+    }
     .myname {
         margin-top: 0;
     }
@@ -119,7 +127,7 @@
     .detail > h4 {
         font-size: 1.2rem;
     }
-    .aboutme-container > img {
+    .mypic {
         clip-path: circle(39%);
     }
 }
@@ -153,7 +161,7 @@
     .aboutme-container {
         padding: 0;
     }
-    .aboutme-container > img {
+    .mypic {
         height: 420px;
         width: 320px;
     }
