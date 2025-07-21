@@ -16,7 +16,13 @@
     font-family: var(--header-font);
     font-size: 2rem;
     font-weight: 900;
-    margin-bottom: 0;
+    margin: 0.5rem 0 0;
+}
+
+.aboutme-subheader {
+    font-style: italic;
+    color: var(--gray);
+    margin-top: 0;
 }
 
 .aboutme-container {
@@ -35,6 +41,7 @@
     border-radius: 3rem;
     object-fit: contain;
     align-self: center;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.5);
 }
 
 .myinfo {
@@ -72,6 +79,7 @@
         rgba(51, 51, 51, 1) 50%,
         rgba(74, 74, 74, 1) 100%
     );
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 1rem;
@@ -133,6 +141,12 @@
         );
         flex-direction: column;
     }
+    .skills-container {
+        padding: 2rem;
+    }
+    .icons {
+        gap: 4rem;
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -151,9 +165,21 @@
     .detail > h4 {
         font-size: 1rem;
     }
+    .icons {
+        gap: 3rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .icons {
+        gap: 2rem;
+    }
 }
 
 @media screen and (max-width: 380px) {
+    .myinfo > h3 {
+        font-size: 1.4rem;
+    }
     .detail > h4 {
         font-size: 0.8rem;
     }

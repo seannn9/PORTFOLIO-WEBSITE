@@ -29,6 +29,9 @@ export default function AboutMe() {
     return (
         <section id="aboutme-section" className="aboutme-section">
             <h2 className="aboutme-header">ABOUT ME</h2>
+            <h3 className="aboutme-subheader">
+                Here's more information about me
+            </h3>
             <div className="aboutme-container">
                 <div className="myinfo">
                     <h3 className="myname accent">Sean Ulric C. Montano</h3>
