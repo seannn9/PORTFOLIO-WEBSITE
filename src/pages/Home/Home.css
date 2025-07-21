@@ -90,7 +90,9 @@ h1,
         align-items: center;
         flex-direction: column;
     }
-
+    .header-two {
+        align-self: center;
+    }
     .links-container {
         justify-content: center;
     }
