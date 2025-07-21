@@ -31,7 +31,7 @@ export default function AboutMe() {
             <h2 className="aboutme-header">ABOUT ME</h2>
             <div className="aboutme-container">
                 <div className="myinfo">
-                    <h3 className="myname">Sean Ulric C. Montano</h3>
+                    <h3 className="myname accent">Sean Ulric C. Montano</h3>
                     <div className="detail myhome">
                         <svg
                             width="32px"
@@ -91,7 +91,7 @@ export default function AboutMe() {
             </div>
             <div className="skills-container">
                 <div className="prog-languages">
-                    <h3>LANGUAGES</h3>
+                    <h4>LANGUAGES</h4>
                     <div className="icons">
                         <svg
                             width="32px"
@@ -258,7 +258,7 @@ export default function AboutMe() {
                     </div>
                 </div>
                 <div className="tech">
-                    <h3>TECHNOLOGIES</h3>
+                    <h4>TECHNOLOGIES</h4>
                     <div className="icons">
                         <svg
                             height="32px"

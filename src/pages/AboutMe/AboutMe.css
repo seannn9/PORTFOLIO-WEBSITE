@@ -45,8 +45,7 @@
 }
 
 .myinfo > h3 {
-    color: var(--primary);
-    font-size: 2rem;
+    font-size: 1.9rem;
     font-weight: 900;
 }
 
@@ -81,7 +80,7 @@
     gap: 3rem;
 }
 
-.skills-container h3 {
+.skills-container h4 {
     text-align: center;
     color: var(--light);
     margin-top: 0;
@@ -109,14 +108,17 @@
         align-items: center;
         text-align: left;
     }
-    .myinfo > h3 {
-        font-size: 1.5rem;
-    }
     .detail > h4 {
         font-size: 1.2rem;
     }
     .aboutme-container > img {
         clip-path: circle(39%);
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .skills-container {
+        padding: 2rem 1rem;
     }
 }
 
@@ -134,16 +136,37 @@
 }
 
 @media screen and (max-width: 640px) {
+    .aboutme-container {
+        padding: 0;
+    }
     .aboutme-container > img {
         height: 420px;
         width: 320px;
     }
 
     .myinfo > h3 {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
 
     .detail > h4 {
         font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .detail > h4 {
+        font-size: 0.8rem;
+    }
+    .skills-container {
+        padding: 2rem 1rem;
+    }
+    .skills-container h4 {
+        font-size: 0.8rem;
+    }
+    .detail > svg {
+        scale: 0.7;
+    }
+    .icons {
+        gap: 1rem;
     }
 }
