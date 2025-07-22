@@ -1,6 +1,5 @@
 import ScrollDown from "../../components/ScrollDown/ScrollDown";
 import "./AboutMe.css";
-import myPic from "../../../public/gradpic-optimized.jpg";
 
 export default function AboutMe() {
     return (
@@ -64,7 +63,7 @@ export default function AboutMe() {
                 <div className="pic-container">
                     <img
                         className="mypic"
-                        src={myPic}
+                        src="/gradpic-optimized.jpg"
                         loading="lazy"
                         alt="graduation picture"
                     />
