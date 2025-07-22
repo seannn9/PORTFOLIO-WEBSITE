@@ -1,31 +1,8 @@
 import ScrollDown from "../../components/ScrollDown/ScrollDown";
 import "./AboutMe.css";
-import { useEffect, useState } from "react";
-
-import supabase from "../../server/supabase.js";
+import myPic from "../../../public/gradpic-optimized.jpg";
 
 export default function AboutMe() {
-    const [myPic, setMyPic] = useState("");
-    useEffect(() => {
-        fetchImage();
-    }, []);
-
-    const fetchImage = () => {
-        try {
-            const { data, error } = supabase.storage
-                .from("project-images")
-                .getPublicUrl("gradpic.jpg");
-            if (error) {
-                console.log("An error occured while fetching image", error);
-            }
-            if (data) {
-                setMyPic(data.publicUrl);
-            }
-        } catch (error) {
-            console.log("An error occured while fetching image", error);
-        }
-    };
-
     return (
         <section id="aboutme-section" className="aboutme-section">
             <h2 className="aboutme-header">ABOUT ME</h2>
@@ -84,15 +61,14 @@ export default function AboutMe() {
                         <h4>De La Salle University - Dasmariñas</h4>
                     </div>
                 </div>
-                {myPic && (
-                    <div className="pic-container">
-                        <img
-                            className="mypic"
-                            src={myPic}
-                            alt="graduation picture"
-                        />
-                    </div>
-                )}
+                <div className="pic-container">
+                    <img
+                        className="mypic"
+                        src={myPic}
+                        loading="lazy"
+                        alt="graduation picture"
+                    />
+                </div>
             </div>
             <div className="skills-container">
                 <div className="prog-languages">
@@ -374,7 +350,7 @@ export default function AboutMe() {
             <div className="aboutme-divider"></div>
             <ScrollDown
                 section_id="projects-section"
-                theme="dark w-100"
+                theme="dark"
                 action="PROJECTS"
             />
         </section>
