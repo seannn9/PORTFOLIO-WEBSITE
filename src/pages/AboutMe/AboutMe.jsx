@@ -10,7 +10,9 @@ export default function AboutMe() {
             </h3>
             <div className="aboutme-container">
                 <div className="myinfo">
-                    <h3 className="myname accent">Sean Ulric C. Montano</h3>
+                    <h3 className="myname" style={{ color: "var(--primary)" }}>
+                        Sean Ulric C. Montano
+                    </h3>
                     <div className="detail myhome">
                         <svg
                             width="32px"
