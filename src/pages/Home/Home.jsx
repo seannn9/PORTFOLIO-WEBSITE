@@ -8,6 +8,7 @@ import AboutMe from "../AboutMe/AboutMe.jsx";
 
 import GradientText from "../../components/GradientText/GradientText.jsx";
 import DotGrid from "../../assets/DotGrid/DotGrid.jsx";
+import RotatingText from "../../components/RotatingText/RotatingText.jsx";
 
 const emailTo = `mailto:seanulric9@gmail.com?subject=Hello%20Sean%20Montano&body=Hi%20Sean,%0D%0A%0D%0AI%20would%20like%20to%20get%20in%20touch%20with%20you.%0D%0A%0D%0ARegards,%0D%0A`;
 
@@ -85,10 +86,27 @@ export default function Home() {
                             </GradientText>
                         </span>
                     </h1>
-                    <section className="intro">
-                        <h2 className="intro-one">Computer Engineer with</h2>
-                        <h2 className="intro-two">
-                            Specialization in Software Engineering
+                    <section className="subheader">
+                        <h2 className="subheader-content">
+                            Aspiring
+                            <RotatingText
+                                texts={[
+                                    "Web Dev.",
+                                    "Software Dev.",
+                                    "Software Engr.",
+                                ]}
+                                staggerFrom={"last"}
+                                initial={{ y: "100%" }}
+                                animate={{ y: 0 }}
+                                exit={{ y: "-120%" }}
+                                staggerDuration={0.025}
+                                transition={{
+                                    type: "spring",
+                                    damping: 30,
+                                    stiffness: 400,
+                                }}
+                                rotationInterval={2000}
+                            />
                         </h2>
                     </section>
                     <div className="cta-container">
