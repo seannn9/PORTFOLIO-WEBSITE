@@ -7,7 +7,6 @@ import Projects from "../Projects/Projects.jsx";
 import AboutMe from "../AboutMe/AboutMe.jsx";
 
 import GradientText from "../../components/GradientText/GradientText.jsx";
-import DotGrid from "../../assets/DotGrid/DotGrid.jsx";
 import RotatingText from "../../components/RotatingText/RotatingText.jsx";
 
 const emailTo = `mailto:seanulric9@gmail.com?subject=Hello%20Sean%20Montano&body=Hi%20Sean,%0D%0A%0D%0AI%20would%20like%20to%20get%20in%20touch%20with%20you.%0D%0A%0D%0ARegards,%0D%0A`;
@@ -53,32 +52,20 @@ export default function Home() {
                         height: "100vh",
                         position: "absolute",
                     }}
-                >
-                    <DotGrid
-                        dotSize={5}
-                        gap={15}
-                        baseColor="#251e36"
-                        activeColor="#5227FF"
-                        proximity={120}
-                        shockRadius={250}
-                        shockStrength={5}
-                        resistance={750}
-                        returnDuration={1.5}
-                    />
-                </div>
+                ></div>
                 <section id="intro-section" className="intro-section">
                     <h1 className="header flex">
                         <span className="header-one">Hi, I'm</span>
                         <span className="header-two">
                             <GradientText
                                 colors={[
-                                    "#944bbb",
-                                    "#b366e6",
-                                    "#d9a8ff",
-                                    "#b366e6",
-                                    "#944bbb",
+                                    "#182fff99",
+                                    "#7c3aed",
+                                    "#182fff99",
+                                    "#7c3aed",
+                                    "#182fff99",
                                 ]}
-                                animationSpeed={5}
+                                animationSpeed={10}
                                 showBorder={false}
                                 className="custom-class"
                             >
