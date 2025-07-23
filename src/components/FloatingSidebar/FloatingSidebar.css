@@ -1,0 +1,75 @@
+.sidebar {
+    position: fixed;
+    top: 50%;
+    right: 1%;
+    transform: translate(-50%, -50%);
+    color: var(--light);
+    background: rgba(124, 58, 237, 0.69);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.3px);
+    -webkit-backdrop-filter: blur(5.3px);
+    border: 1px solid #7c3aed;
+    padding: 1rem 0.5rem;
+    border-radius: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    z-index: 999;
+}
+.sidebar-icon {
+    padding: 1rem;
+    clip-path: circle(40%);
+    cursor: pointer;
+    border-radius: 1rem;
+    background-color: transparent;
+}
+.sidebar-icon,
+.sidebar-icon:not(.aboutme-icon) > path {
+    transition: 0.3s;
+}
+.sidebar-icon:hover {
+    scale: 1.1;
+    background-color: var(--light);
+}
+.sidebar-icon:hover,
+.sidebar-icon:hover > path {
+    fill: var(--dark);
+}
+.wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper .tooltip {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    top: 18%;
+    transition: 0.3s;
+    padding: 0.5rem;
+    background-color: var(--light);
+    color: var(--dark);
+    font-family: var(--header-font);
+    font-weight: bolder;
+    border-radius: 1rem;
+    z-index: -1;
+    text-wrap: nowrap;
+}
+.sidebar-icon:hover + .tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translatey(-50px);
+}
+@media screen and (max-width: 800px) {
+    .sidebar {
+        top: auto;
+        bottom: 0.5rem;
+        left: 50%;
+        right: auto;
+        flex-direction: row;
+        padding: 0.5rem 1rem;
+    }
+}
