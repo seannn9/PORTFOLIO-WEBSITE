@@ -32,7 +32,7 @@ export default function Projects() {
 
     return (
         <section id="projects-section" className="projects-section">
-            <h2 className="projects-header">PROJECTS</h2>
+            <h2 className="projects-header">RECENT PROJECTS</h2>
             <div className="project-container">
                 {projects.length > 0 &&
                     projects.map((project, key) => (

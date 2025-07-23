@@ -12,14 +12,12 @@
     border-top-left-radius: 5rem;
     border-top-right-radius: 5rem;
 }
-
 .projects-header {
     height: fit-content;
     font-family: var(--header-font);
     font-size: 2rem;
     font-weight: 900;
 }
-
 .project-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -27,9 +25,8 @@
     height: 100%;
     width: 100%;
     box-sizing: border-box;
-    padding: 1rem 2rem;
+    padding: 1rem 7rem;
 }
-
 @media screen and (max-width: 640px) {
     .projects-section,
     .project-container {
