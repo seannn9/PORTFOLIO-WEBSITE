@@ -12,7 +12,8 @@
     --primary: #7c3aed;
     --light: rgb(228, 228, 228);
     --dark: #1b1b1b;
-    --gray: #4a4a4a;
+    --darker: #141414;
+    --light-gray: #777777;
     --header-font: "Raleway", Avenir, Helvetica, Arial, sans-serif;
 }
 body {
