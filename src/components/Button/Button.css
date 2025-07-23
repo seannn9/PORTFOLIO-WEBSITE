@@ -1,7 +1,7 @@
 .cta-1:hover,
 .cta-2:hover {
     scale: 1.05;
-    background-color: var(--dark);
+    background-color: var(--darker);
 }
 .cta-1,
 .cta-2 {
@@ -24,9 +24,6 @@
 .cta-2:hover {
     color: var(--light);
 }
-.cta-1 > svg > path {
-    fill: var(--light);
-}
 .cta-1,
 .cta-1 > svg,
 .cta-2,
@@ -45,7 +42,7 @@
 .cta-2 {
     border-color: var(--light);
     background-color: var(--light);
-    color: var(--dark);
+    color: var(--darker);
 }
 .cta-2:hover > svg {
     filter: invert(1);
