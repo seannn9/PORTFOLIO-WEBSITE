@@ -12,8 +12,11 @@ h1 {
     margin: 0;
 }
 .intro-container {
+    background-color: var(--darker);
     width: 100%;
     justify-content: center;
+    border-bottom-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
 }
 .intro-section {
     flex-direction: column;
@@ -51,7 +54,7 @@ h1 {
     padding: 1rem;
     clip-path: circle(40%);
     transition: 0.2s;
-    background-color: var(--dark);
+    background-color: var(--darker);
     position: relative;
 }
 .cta-container {
