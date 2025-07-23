@@ -46,13 +46,6 @@ export default function Home() {
     return (
         <>
             <div className="intro-container">
-                <div
-                    style={{
-                        width: "100%",
-                        height: "100vh",
-                        position: "absolute",
-                    }}
-                ></div>
                 <section id="intro-section" className="intro-section">
                     <h1 className="header flex">
                         <span className="header-one">Hi, I'm</span>
@@ -104,7 +97,7 @@ export default function Home() {
                                     <path
                                         clip-rule="evenodd"
                                         d="m3.75 5.25-.75.75v12l.75.75h16.5l.75-.75v-12l-.75-.75zm.75 2.4455v9.5545h15v-9.55475l-7.5001 6.81835zm13.8099-.9455h-12.62004l6.31004 5.7364z"
-                                        fill="#1b1b1b"
+                                        fill="rgb(228,228,228)"
                                         fill-rule="evenodd"
                                     />
                                 </svg>
@@ -124,14 +117,14 @@ export default function Home() {
                                     >
                                         <path
                                             d="M13.5 3H12H7C5.89543 3 5 3.89543 5 5V19C5 20.1046 5.89543 21 7 21H7.5M13.5 3L19 8.625M13.5 3V7.625C13.5 8.17728 13.9477 8.625 14.5 8.625H19M19 8.625V9.75V12V19C19 20.1046 18.1046 21 17 21H16.5"
-                                            stroke="#1b1b1b"
+                                            stroke="var(--darker)"
                                             stroke-width="2"
                                             stroke-linecap="round"
                                             stroke-linejoin="round"
                                         />
                                         <path
                                             d="M12 12V20M12 20L9.5 17.5M12 20L14.5 17.5"
-                                            stroke="#1b1b1b"
+                                            stroke="var(--darker)"
                                             stroke-width="2"
                                             stroke-linecap="round"
                                             stroke-linejoin="round"
@@ -221,7 +214,6 @@ export default function Home() {
                     <div className="home-divider"></div>
                     <ScrollDown
                         section_id="aboutme-section"
-                        theme="light"
                         action="ABOUT ME"
                     />
                 </section>
