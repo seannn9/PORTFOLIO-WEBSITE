@@ -1,9 +1,9 @@
 import "./ScrollDown.css";
 
-export default function ScrollDown({ section_id, action, theme }) {
+export default function ScrollDown({ section_id, action }) {
     return (
         <div
-            className={`scroll-down-btn ${theme}`}
+            className={`scroll-down-btn`}
             onClick={() => {
                 document
                     .getElementById(section_id)
