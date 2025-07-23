@@ -9,8 +9,9 @@ export default function FloatingSidebar() {
 
     return (
         <nav className="sidebar">
-            <div className="wrapper" onClick={() => scrollTo("home-section")}>
+            <div className="wrapper">
                 <svg
+                    onClick={() => scrollTo("home-section")}
                     className="sidebar-icon"
                     width="24px"
                     height="24px"
@@ -26,11 +27,9 @@ export default function FloatingSidebar() {
                 </svg>
                 <div className="tooltip">Home</div>
             </div>
-            <div
-                className="wrapper"
-                onClick={() => scrollTo("aboutme-section")}
-            >
+            <div className="wrapper">
                 <svg
+                    onClick={() => scrollTo("aboutme-section")}
                     className="aboutme-icon sidebar-icon"
                     fill="var(--light)"
                     width="28px"
@@ -43,11 +42,9 @@ export default function FloatingSidebar() {
                 </svg>
                 <div className="tooltip">About</div>
             </div>
-            <div
-                className="wrapper"
-                onClick={() => scrollTo("projects-section")}
-            >
+            <div className="wrapper">
                 <svg
+                    onClick={() => scrollTo("projects-section")}
                     className="sidebar-icon"
                     width="24px"
                     height="24px"
