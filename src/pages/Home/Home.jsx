@@ -1,5 +1,4 @@
 import Button from "../../components/Button/Button.jsx";
-import ScrollDown from "../../components/ScrollDown/ScrollDown.jsx";
 import "./Home.css";
 import supabase from "../../server/supabase.js";
 
@@ -45,7 +44,7 @@ export default function Home() {
 
     return (
         <>
-            <div className="intro-container">
+            <div className="intro-container" id="home-section">
                 <section id="intro-section" className="intro-section">
                     <h1 className="header flex">
                         <span className="header-one">Hi, I'm</span>
@@ -211,11 +210,6 @@ export default function Home() {
                             </svg>
                         </a>
                     </div>
-                    <div className="home-divider"></div>
-                    <ScrollDown
-                        section_id="aboutme-section"
-                        action="ABOUT ME"
-                    />
                 </section>
             </div>
             <AboutMe />
