@@ -1,4 +1,8 @@
 .intro-container,
+.social-icon {
+    background-color: var(--darker);
+}
+.intro-container,
 .intro-section {
     min-height: inherit;
     display: flex;
@@ -12,7 +16,6 @@ h1 {
     margin: 0;
 }
 .intro-container {
-    background-color: var(--darker);
     width: 100%;
     justify-content: center;
     border-bottom-left-radius: 5rem;
@@ -26,15 +29,14 @@ h1 {
     gap: 1rem;
 }
 .header-one {
-    margin-top: 4rem;
     animation: 0.2s 0.3s fadeup, 0.3s 0.5s forwards bounceback;
 }
 h1 {
     font-weight: 900;
     line-height: normal;
 }
-.subheader > h2,
 .links-container,
+.subheader > h2,
 h1 {
     width: 100%;
 }
@@ -54,7 +56,6 @@ h1 {
     padding: 1rem;
     clip-path: circle(40%);
     transition: 0.2s;
-    background-color: var(--darker);
     position: relative;
 }
 .cta-container {
@@ -67,12 +68,16 @@ h1 {
     flex-direction: column;
 }
 @media screen and (max-width: 800px) {
+    .header-two,
+    .subheader,
+    h1 {
+        align-self: center;
+    }
     .intro-section {
         width: 80%;
     }
     .subheader,
     h1 {
-        align-self: center;
         text-align: center;
     }
     h1 {
@@ -81,9 +86,6 @@ h1 {
     .cta-container {
         align-items: center;
         flex-direction: column;
-    }
-    .header-two {
-        align-self: center;
     }
     .links-container {
         justify-content: center;
@@ -108,8 +110,8 @@ h1 {
 .cta-container > *,
 .header-one,
 .header-two,
-.subheader-content,
-.social-icon {
+.social-icon,
+.subheader-content {
     opacity: 0;
 }
 .header-two {
@@ -130,10 +132,6 @@ h1 {
 .social-icon:hover {
     filter: invert(1);
     scale: 1.1;
-}
-.home-divider {
-    height: 50px;
-    width: 100%;
 }
 @keyframes fadeup {
     from {
