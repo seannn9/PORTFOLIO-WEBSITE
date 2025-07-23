@@ -1,13 +1,10 @@
-import ScrollDown from "../../components/ScrollDown/ScrollDown";
 import "./AboutMe.css";
 
 export default function AboutMe() {
     return (
         <section id="aboutme-section" className="aboutme-section">
             <h2 className="aboutme-header">ABOUT ME</h2>
-            <h3 className="aboutme-subheader">
-                Here's more information about me
-            </h3>
+            <h3 className="aboutme-subheader">Get to know me more</h3>
             <div className="aboutme-container">
                 <div className="myinfo">
                     <h3 className="myname" style={{ color: "var(--primary)" }}>
@@ -72,6 +69,7 @@ export default function AboutMe() {
                 </div>
             </div>
             <div className="skills-container">
+                <h3 className="skills-title">SKILLS</h3>
                 <div className="prog-languages">
                     <h4>LANGUAGES</h4>
                     <div className="icons">
@@ -348,8 +346,6 @@ export default function AboutMe() {
                     </div>
                 </div>
             </div>
-            <div className="aboutme-divider"></div>
-            <ScrollDown section_id="projects-section" action="PROJECTS" />
         </section>
     );
 }
