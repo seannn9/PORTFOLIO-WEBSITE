@@ -7,7 +7,6 @@
 .cta-2 {
     display: flex;
     color: var(--dark);
-    font-family: var(--header-font);
     font-size: 1rem;
     font-weight: 800;
     background-color: var(--primary);

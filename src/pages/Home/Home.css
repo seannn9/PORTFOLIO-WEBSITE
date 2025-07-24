@@ -7,10 +7,6 @@
     min-height: inherit;
     display: flex;
 }
-.subheader,
-h1 {
-    font-family: var(--header-font);
-}
 .subheader > h2,
 h1 {
     margin: 0;

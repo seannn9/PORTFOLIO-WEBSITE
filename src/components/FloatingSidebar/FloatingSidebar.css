@@ -52,7 +52,6 @@
     padding: 0.5rem;
     background-color: var(--light);
     color: var(--dark);
-    font-family: var(--header-font);
     font-weight: bolder;
     border-radius: 1rem;
     z-index: -1;
