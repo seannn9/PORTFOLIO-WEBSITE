@@ -110,7 +110,7 @@ h1 {
 .cta-container > *,
 .header-one,
 .header-two,
-.social-icon,
+.link-wrapper,
 .subheader-content {
     opacity: 0;
 }
@@ -120,13 +120,13 @@ h1 {
 .subheader-content {
     animation: 0.5s 0.7s forwards faderight;
 }
-.cta-container > a {
+.cta-container > .cta-1-wrapper {
     animation: 0.2s 1s fadeup, 0.3s 1.2s forwards bounceback;
 }
-.cta-container > div {
+.cta-container > .cta-2-wrapper {
     animation: 0.2s 1.1s forwards fadeup, 0.3s 1.3s forwards bounceback;
 }
-.social-icon {
+.link-wrapper {
     animation: 0.3s scale, 0.2s 1.2s fadeup, 0.3s 1.4s forwards bounceback;
 }
 .social-icon:hover {
