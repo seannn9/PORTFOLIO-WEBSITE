@@ -1,12 +1,12 @@
 import { Routes, Route } from "react-router-dom";
 import "./css/App.css";
 import Home from "./pages/Home/Home.jsx";
-import FloatingSidebar from "./components/FloatingSidebar/FloatingSidebar.jsx";
+import Navbar from "./components/Navbar/Navbar.jsx";
 
 function App() {
     return (
         <div className="main-container">
-            <FloatingSidebar />
+            <Navbar />
             <Routes>
                 <Route path="/" element={<Home />} />
             </Routes>
