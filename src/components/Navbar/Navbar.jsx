@@ -1,6 +1,6 @@
-import "./FloatingSidebar.css";
+import "./Navbar.css";
 
-export default function FloatingSidebar() {
+export default function Navbar() {
     const scrollTo = (section_id) => {
         document
             .getElementById(section_id)
@@ -8,11 +8,11 @@ export default function FloatingSidebar() {
     };
 
     return (
-        <nav className="sidebar">
+        <nav className="navbar">
             <div className="wrapper">
                 <svg
                     onClick={() => scrollTo("home-section")}
-                    className="sidebar-icon"
+                    className="navbar-icon"
                     width="24px"
                     height="24px"
                     viewBox="0 0 16 16"
@@ -30,7 +30,7 @@ export default function FloatingSidebar() {
             <div className="wrapper">
                 <svg
                     onClick={() => scrollTo("aboutme-section")}
-                    className="aboutme-icon sidebar-icon"
+                    className="aboutme-icon navbar-icon"
                     fill="var(--light)"
                     width="28px"
                     height="28px"
@@ -45,7 +45,7 @@ export default function FloatingSidebar() {
             <div className="wrapper">
                 <svg
                     onClick={() => scrollTo("projects-section")}
-                    className="sidebar-icon"
+                    className="navbar-icon"
                     width="24px"
                     height="24px"
                     viewBox="0 0 16 16"

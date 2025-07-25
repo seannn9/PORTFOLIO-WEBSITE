@@ -1,4 +1,4 @@
-.sidebar {
+.navbar {
     position: fixed;
     top: 50%;
     right: 1%;
@@ -19,23 +19,23 @@
     animation: appearfromside 0.3s 0.5s forwards;
     opacity: 0;
 }
-.sidebar-icon {
+.navbar-icon {
     padding: 1rem;
     clip-path: circle(40%);
     cursor: pointer;
     border-radius: 1rem;
     background-color: transparent;
 }
-.sidebar-icon,
-.sidebar-icon:not(.aboutme-icon) > path {
+.navbar-icon,
+.navbar-icon:not(.aboutme-icon) > path {
     transition: 0.3s;
 }
-.sidebar-icon:hover {
+.navbar-icon:hover {
     scale: 1.1;
     background-color: var(--light);
 }
-.sidebar-icon:hover,
-.sidebar-icon:hover > path {
+.navbar-icon:hover,
+.navbar-icon:hover > path {
     fill: var(--dark);
 }
 .wrapper {
@@ -59,13 +59,13 @@
     z-index: -1;
     text-wrap: nowrap;
 }
-.sidebar-icon:hover + .tooltip {
+.navbar-icon:hover + .tooltip {
     opacity: 1;
     visibility: visible;
     transform: translatey(-50px);
 }
 @media screen and (max-width: 800px) {
-    .sidebar {
+    .navbar {
         top: auto;
         bottom: -1rem;
         left: 50%;
