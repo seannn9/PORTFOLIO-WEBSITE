@@ -39,6 +39,7 @@ export default function Projects() {
                         <ProjectCard
                             key={key}
                             project_name={project.project_name}
+                            project_desc={project.description}
                         />
                     ))}
             </div>
