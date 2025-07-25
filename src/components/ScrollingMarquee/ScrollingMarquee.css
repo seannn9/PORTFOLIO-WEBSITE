@@ -1,0 +1,29 @@
+.scrolling-marquee {
+    gap: 2rem;
+}
+.marquee-child {
+    gap: 3rem;
+}
+.tech-container {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+}
+@media screen and (max-width: 900px) {
+    .scrolling-marquee {
+        gap: 0.5rem;
+    }
+    .marquee-child {
+        gap: 1rem;
+    }
+}
+@media screen and (max-width: 640px) {
+    .scrolling-marquee {
+        gap: 0rem;
+    }
+    .marquee-child {
+        gap: 0.5rem;
+    }
+}
