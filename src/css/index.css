@@ -10,9 +10,10 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     --primary: #7c3aed;
-    --light: rgb(228, 228, 228);
-    --dark: #1b1b1b;
+    --light: #e4e4e4;
+    --dark-gray: #1b1b1b;
     --darker: #141414;
+    --dark: #000000;
     --light-gray: #777777;
 }
 body {
