@@ -18,7 +18,7 @@
 }
 .project-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     min-height: 320px;
     height: 100%;
     width: 100%;
@@ -26,6 +26,13 @@
     padding: 1rem 7rem;
 }
 @media screen and (max-width: 640px) {
+    .projects-section,
+    .project-container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+@media screen and (max-width: 390px) {
     .projects-section,
     .project-container {
         padding-left: 0;
