@@ -63,7 +63,7 @@ export default function AboutMe() {
                 <div className="pic-container">
                     <img
                         className="mypic"
-                        src="/gradpic-optimized.jpg"
+                        src="images/gradpic-optimized.jpg"
                         loading="lazy"
                         alt="graduation picture"
                     />
