@@ -41,6 +41,7 @@ export default function Projects() {
                             project_image={project.project_image}
                             project_name={project.project_name}
                             project_desc={project.description}
+                            project_source={project.source_code}
                         />
                     ))}
             </div>
