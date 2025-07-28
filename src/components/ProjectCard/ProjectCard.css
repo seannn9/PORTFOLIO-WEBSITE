@@ -42,6 +42,19 @@
 }
 .take-action {
     width: 40%;
+    background-color: var(--dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+}
+.take-action > a > svg {
+    transition: 0.2s;
+}
+.take-action > a > svg:hover {
+    scale: 1.1;
+}
+.take-action:has(a > svg:hover) {
     background-color: var(--darker);
 }
 @media screen and (max-width: 640px) {
