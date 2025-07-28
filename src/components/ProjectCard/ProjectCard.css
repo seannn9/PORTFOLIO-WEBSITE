@@ -1,3 +1,8 @@
+.take-action,
+.take-action > svg,
+.take-action > .source-code-text {
+    transition: 0.2s;
+}
 .card {
     box-sizing: border-box;
     padding: 1rem;
@@ -31,8 +36,8 @@
     display: flex;
     justify-content: space-between;
 }
-.tech-used,
-.take-action {
+.take-action,
+.tech-used {
     border-radius: 2rem;
 }
 .tech-used {
@@ -46,16 +51,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 0.2s;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;
 }
-.take-action > a > svg {
-    transition: 0.2s;
-}
-.take-action > a > svg:hover {
-    scale: 1.1;
-}
-.take-action:has(a > svg:hover) {
+.take-action:hover {
     background-color: var(--darker);
+}
+.take-action:hover > svg {
+    transform: translateY(-15px);
+}
+.take-action > .source-code-text {
+    position: absolute;
+    font-size: 0.8rem;
+    opacity: 0;
+}
+.take-action:hover > .source-code-text {
+    color: var(--light);
+    opacity: 1;
+    transform: translateY(15px);
 }
 @media screen and (max-width: 640px) {
     .card {
