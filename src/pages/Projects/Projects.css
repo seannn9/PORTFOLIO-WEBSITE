@@ -2,15 +2,13 @@
     min-height: inherit;
     width: 100%;
     color: var(--light);
-    background-color: var(--darker);
+    background-color: var(--dark);
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 2rem;
     box-sizing: border-box;
-    border-top-left-radius: 5rem;
-    border-top-right-radius: 5rem;
 }
 .projects-header {
     font-size: 2rem;

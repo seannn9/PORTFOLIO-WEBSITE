@@ -1,7 +1,7 @@
 .cta-1:hover,
 .cta-2:hover {
     scale: 1.05;
-    background-color: var(--darker);
+    background-color: transparent;
 }
 .cta-1,
 .cta-2 {

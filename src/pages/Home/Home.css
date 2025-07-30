@@ -1,6 +1,6 @@
 .intro-container,
 .social-icon {
-    background-color: var(--darker);
+    background-color: var(--dark);
 }
 .intro-container,
 .intro-section {
@@ -14,8 +14,6 @@ h1 {
 .intro-container {
     width: 100%;
     justify-content: center;
-    border-bottom-left-radius: 5rem;
-    border-bottom-right-radius: 5rem;
 }
 .intro-section {
     flex-direction: column;
