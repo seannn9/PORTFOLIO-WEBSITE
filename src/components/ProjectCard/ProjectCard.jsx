@@ -13,7 +13,6 @@ export default function ProjectCard({
             <div className="project-details">
                 <h3>{project_name}</h3>
                 <div className="row-2">
-                    <div className="tech-used"></div>
                     <a
                         className="take-action"
                         href={project_source}

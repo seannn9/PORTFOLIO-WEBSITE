@@ -34,16 +34,10 @@
 .row-2 {
     height: 50%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
-.take-action,
-.tech-used {
-    border-radius: 2rem;
-}
-.tech-used {
-    position: relative;
-    width: 50%;
-    background-color: var(--light-gray);
+.take-action {
+    border-radius: 1rem;
 }
 .take-action {
     width: 40%;
@@ -69,7 +63,7 @@
 .take-action:hover > .source-code-text {
     color: var(--light);
     opacity: 1;
-    transform: translateY(15px);
+    transform: translateY(20px);
 }
 @media screen and (max-width: 640px) {
     .card {
