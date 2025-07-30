@@ -11,7 +11,7 @@ export default function ProjectCard({
                 <img src={project_image} alt={project_name} />
             </div>
             <div className="project-details">
-                <h3>{project_name}</h3>
+                <h3 className="project-name">{project_name}</h3>
                 <div className="row-2">
                     <a
                         className="take-action"
