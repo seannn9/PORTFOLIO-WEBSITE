@@ -48,9 +48,11 @@
     flex-direction: column;
     position: relative;
     cursor: pointer;
+    border: 2px solid var(--dark);
 }
 .take-action:hover {
     background-color: var(--darker);
+    border: 2px solid var(--light-gray);
 }
 .take-action:hover > svg {
     transform: translateY(-15px);
