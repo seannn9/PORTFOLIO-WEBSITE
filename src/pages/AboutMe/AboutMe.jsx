@@ -1,5 +1,6 @@
 import ScrollingMarquee from "../../components/ScrollingMarquee/ScrollingMarquee";
 import "./AboutMe.css";
+import { motion } from "motion/react";
 
 export default function AboutMe() {
     return (
@@ -60,14 +61,23 @@ export default function AboutMe() {
                         <h4>De La Salle University - Dasmariñas</h4>
                     </div>
                 </div>
-                <div className="pic-container">
+                <motion.div
+                    className="pic-container"
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    whileInView={{
+                        opacity: 1,
+                        scale: 1,
+                        transition: { duration: 0.5 },
+                    }}
+                    viewport={{ once: true, amount: 0.5 }}
+                >
                     <img
                         className="mypic"
                         src="images/gradpic-optimized.jpg"
                         loading="lazy"
                         alt="graduation picture"
                     />
-                </div>
+                </motion.div>
             </div>
             <div className="skills-container">
                 <ScrollingMarquee />
