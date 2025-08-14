@@ -45,6 +45,7 @@ export default function Projects() {
                             project_name={project.project_name}
                             project_desc={project.description}
                             project_source={project.source_code}
+                            project_link={project.project_link}
                         />
                     ))}
             </div>

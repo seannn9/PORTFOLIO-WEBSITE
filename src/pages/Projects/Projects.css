@@ -14,6 +14,7 @@
     font-size: 2rem;
     font-weight: 900;
     margin-bottom: 0;
+    text-align: center;
 }
 .projects-subheader {
     text-align: center;
@@ -23,12 +24,13 @@
 }
 .project-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
     min-height: 320px;
     height: 100%;
     width: 100%;
     box-sizing: border-box;
-    padding: 1rem 7rem;
+    padding: 1rem 5rem;
 }
 .link-to-github {
     color: var(--light-gray);
@@ -42,7 +44,12 @@
 .link-to-github > a:hover > svg > path {
     fill: var(--primary);
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1400px) {
+    .project-container {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
+}
+@media screen and (max-width: 720px) {
     .projects-section,
     .project-container {
         padding-left: 1rem;
@@ -53,7 +60,7 @@
         font-size: 1rem;
     }
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 400px) {
     .projects-section,
     .project-container {
         padding-left: 0;
