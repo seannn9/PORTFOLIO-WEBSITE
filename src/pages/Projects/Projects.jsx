@@ -5,6 +5,7 @@ import ProjectCard from "../../components/ProjectCard/ProjectCard.jsx";
 
 export default function Projects() {
     const [projects, setProjects] = useState([]);
+    const [isLoading, setIsLoading] = useState(false);
 
     useEffect(() => {
         fetchProjects();
@@ -12,6 +13,7 @@ export default function Projects() {
 
     const fetchProjects = async () => {
         try {
+            setIsLoading(true);
             const { data, error } = await supabase
                 .from("Projects")
                 .select("*")
@@ -23,10 +25,12 @@ export default function Projects() {
                 );
             } else {
                 setProjects(data);
+                setIsLoading(false);
             }
         } catch (error) {
             console.log("An error occured while fetching projects: ", error);
         } finally {
+            setIsLoading(false);
         }
     };
 
@@ -37,7 +41,9 @@ export default function Projects() {
                 Here are some of my most recent coding projects
             </h3>
             <div className="project-container">
-                {projects.length > 0 &&
+                {isLoading ? (
+                    <h4 style={{ color: "var(--light-gray)" }}>Loading...</h4>
+                ) : projects.length > 0 ? (
                     projects.map((project, key) => (
                         <ProjectCard
                             key={key}
@@ -47,7 +53,10 @@ export default function Projects() {
                             project_source={project.source_code}
                             project_link={project.project_link}
                         />
-                    ))}
+                    ))
+                ) : (
+                    <h4>No Projects Found</h4>
+                )}
             </div>
             <h3 className="link-to-github">
                 You can find more of my projects on:{" "}
