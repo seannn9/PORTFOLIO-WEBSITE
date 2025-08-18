@@ -17,7 +17,7 @@ export default function Projects() {
             const { data, error } = await supabase
                 .from("Projects")
                 .select("*")
-                .order("id", { ascending: true });
+                .order("created_at", { ascending: false });
             if (error) {
                 console.log(
                     "An error occured while fetching projects: ",

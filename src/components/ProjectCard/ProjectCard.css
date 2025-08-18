@@ -35,13 +35,14 @@
 .row-2 {
     height: 50%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     gap: 0.5rem;
 }
 .take-action {
     border-radius: 1rem;
 }
-.take-action {
+.take-action,
+.project-link {
     width: 40%;
     background-color: var(--dark);
     display: flex;
@@ -52,9 +53,9 @@
     cursor: pointer;
     border: 2px solid var(--dark);
 }
-.take-action:hover {
+.take-action:not(.project-link):hover {
     background-color: var(--darker);
-    border: 2px solid var(--light-gray);
+    border-color: var(--light-gray);
 }
 .take-action:hover > svg {
     transform: translateY(-15px);
@@ -68,6 +69,14 @@
     color: var(--light);
     opacity: 1;
     transform: translateY(20px);
+}
+.project-link {
+    background-color: var(--primary);
+    border: 2px solid var(--primary);
+}
+.project-link:hover {
+    background-color: #6f34d6;
+    border-color: var(--light);
 }
 @media screen and (max-width: 640px) {
     .card {

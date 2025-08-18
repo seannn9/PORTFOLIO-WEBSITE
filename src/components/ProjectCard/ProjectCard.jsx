@@ -33,18 +33,18 @@ export default function ProjectCard({
                                 fill="#fff"
                             />
                         </svg>
-                        <div className="source-code-text">Source Code</div>
+                        <div className="source-code-text">SOURCE CODE</div>
                     </a>
                     {project_link && (
                         <a
-                            className="take-action"
+                            className="take-action project-link"
                             href={project_link}
                             target="_blank"
                             rel="noreferrer noopener"
                         >
                             <svg
-                                width="32px"
-                                height="32px"
+                                width="40px"
+                                height="40px"
                                 viewBox="0 0 24 24"
                                 fill="none"
                                 xmlns="http://www.w3.org/2000/svg"
@@ -56,7 +56,7 @@ export default function ProjectCard({
                                     fill="#fff"
                                 />
                             </svg>
-                            <div className="source-code-text">Link</div>
+                            <div className="source-code-text">LINK</div>
                         </a>
                     )}
                 </div>
