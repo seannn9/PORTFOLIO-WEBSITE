@@ -7,9 +7,7 @@ function App() {
     return (
         <div className="main-container">
             <Navbar />
-            <Routes>
-                <Route path="/" element={<Home />} />
-            </Routes>
+            <Home />
         </div>
     );
 }
